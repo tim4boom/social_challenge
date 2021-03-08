@@ -1,5 +1,8 @@
 <div class="all-content w-clearfix">
-  <header class="main-column header"><img src="assets/thumb1.jpg" loading="lazy" alt="" class="image">
+  <header class="main-column header">
+    <div loading="lazy" class="image">
+      <%= image_tag('thumb1.jpg') %>
+    </div>
     <div class="big-tagline w-hidden-small w-hidden-tiny">Do Good.<br>Feel Good.</div>
     <div class="info-wrapper">
       <div class="tagline">30-Day Social Challenge</div>
@@ -8,10 +11,16 @@
     <div class="footer-wrapper w-clearfix">
       <a href="#" class="footer-nav-link w-inline-block">
         <%= image_tag('home-icon.svg') %>
-        <!-- <img src="assets/home-icon.svg" alt=""></a> -->
-      <a href="http://www.twitter.com/webflowapp" class="footer-nav-link w-inline-block"><img src="assets/twitter-icon.svg" alt=""></a>
-      <a href="http://www.facebook.com/webflow" class="footer-nav-link w-inline-block"><img src="assets/facebook-icon.svg" alt=""></a>
-      <a href="subscribe.html" class="footer-nav-link w-inline-block"><img src="assets/user-solid.svg" alt=""></a>
+      </a>
+      <a href="http://www.twitter.com/webflowapp" class="footer-nav-link w-inline-block">
+        <%= image_tag('twitter-icon.svg') %>
+      </a>
+      <a href="http://www.facebook.com/webflow" class="footer-nav-link w-inline-block">
+        <%= image_tag('facebook-icon.svg') %>
+      </a>
+      <a href="subscribe.html" class="footer-nav-link w-inline-block">
+        <%= image_tag('user-solid.svg') %>
+      </a>
     </div>
   </header>
   <div class="main-column content">
