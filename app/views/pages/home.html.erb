@@ -1,5 +1,6 @@
 <div class="all-content w-clearfix">
   <header class="main-column header">
+    <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn-white" %>
     <div loading="lazy" class="image">
       <%= image_tag('thumb1.jpg') %>
     </div>
@@ -12,10 +13,10 @@
       <a href="#" class="footer-nav-link w-inline-block">
         <%= image_tag('home-icon.svg') %>
       </a>
-      <a href="http://www.twitter.com/webflowapp" class="footer-nav-link w-inline-block">
+      <a href="#" class="footer-nav-link w-inline-block">
         <%= image_tag('twitter-icon.svg') %>
       </a>
-      <a href="http://www.facebook.com/webflow" class="footer-nav-link w-inline-block">
+      <a href="#" class="footer-nav-link w-inline-block">
         <%= image_tag('facebook-icon.svg') %>
       </a>
       <a href="subscribe.html" class="footer-nav-link w-inline-block">
@@ -30,10 +31,14 @@
         <div class="menu-icon w-icon-nav-menu"></div>
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
-        <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">See All</a>
-        <a href="suggest.html" class="nav-link w-nav-link">SUGGEST</a>
-        <a href="about.html" class="nav-link w-nav-link">About</a>
-        <a href="subscribe.html" class="nav-link w-nav-link">Join</a>
+        <!-- <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">See All</a> -->
+        <%= link_to "SEE ALL", root_path, class: "nav-link w-nav-link" %>
+        <%= link_to "SUGGEST", suggest_path, class: "nav-link w-nav-link" %>
+        <%= link_to "ABOUT", about_path, class: "nav-link w-nav-link" %>
+        <%= link_to "JOIN", new_user_registration_path, class: "nav-link w-nav-link" %>
+        <!-- <a href="suggest.html" class="nav-link w-nav-link">SUGGEST</a> -->
+        <!-- <a href="about.html" class="nav-link w-nav-link">About</a> -->
+        <!-- <a href="subscribe.html" class="nav-link w-nav-link">Join</a> -->
       </nav>
     </nav>
     <div data-animation="slide" data-duration="500" data-infinite="1" class="w-slider">
@@ -48,7 +53,7 @@
       <div class="w-slider-nav w-round"></div>
     </div>
     <a href="article.html" class="challenge w-inline-block w-clearfix">
-      <div class="image-wrapper"><img src="assets/thumb11.jpg" width="109" alt="" class="thumbnail"></div>
+      <div class="image-wrapper"><%= image_tag 'thumb11.jpg', class: 'thumbnail', width:"109" %></div>
       <section class="challenge-text-wrapper w-clearfix">
         <h2 class="arrow">❯</h2>
         <h2 class="thumbnail-title">Firstname Lastname, Nov. 5th 2020</h2>
@@ -56,7 +61,7 @@
       </section>
     </a>
     <a href="article.html" class="challenge w-inline-block w-clearfix">
-      <div class="image-wrapper"><img src="assets/thumb14.jpg" width="109" alt="" class="thumbnail"></div>
+      <div class="image-wrapper"><%= image_tag 'thumb14.jpg', class: 'thumbnail', width:"109" %></div>
       <section class="challenge-text-wrapper w-clearfix">
         <h2 class="arrow">❯</h2>
         <h2 class="thumbnail-title">Firstname Lastname, Nov. 5th 2020</h2>
@@ -64,7 +69,7 @@
       </section>
     </a>
     <a href="article.html" class="challenge w-inline-block w-clearfix">
-      <div class="image-wrapper"><img src="assets/thumb10.jpg" width="109" alt="" class="thumbnail"></div>
+      <div class="image-wrapper"><%= image_tag 'thumb10.jpg', class: 'thumbnail', width:"109" %></div>
       <section class="challenge-text-wrapper w-clearfix">
         <h2 class="arrow">❯</h2>
         <h2 class="thumbnail-title">Firstname Lastname, Nov. 5th 2020</h2>
