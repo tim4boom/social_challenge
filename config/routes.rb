@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     # resources :favourites, only: [:new, :create,:destroy]
   end
 
+  get '/see-all', to: 'pages#see-all'
   get '/suggest', to: 'pages#suggest'
   get '/about', to: 'pages#about'
 
